@@ -4,7 +4,7 @@
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
-  background-color: #56baed;
+  background-color: #041C32;
 }
 
 a {
@@ -24,7 +24,10 @@ h2 {
   color: #cccccc;
 }
 
-
+#error{
+  visibility: hidden;
+  color: red;
+}
 
 /* STRUCTURE */
 
@@ -41,7 +44,7 @@ h2 {
 #formContent {
   -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
-  background: #fff;
+  background: #064663;
   padding: 30px;
   width: 90%;
   max-width: 450px;
@@ -53,8 +56,8 @@ h2 {
 }
 
 #formFooter {
-  background-color: #f6f6f6;
-  border-top: 1px solid #dce8f1;
+  background-color: #064663;
+  border-top: 1px solid #064663;
   padding: 25px;
   text-align: center;
   -webkit-border-radius: 0 0 10px 10px;

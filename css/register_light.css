@@ -25,7 +25,10 @@ h2 {
   color: #cccccc;
 }
 
-
+#error {
+  visibility: hidden;
+  color: red;
+}
 
 /* STRUCTURE */
 
