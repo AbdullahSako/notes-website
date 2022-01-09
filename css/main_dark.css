@@ -9,7 +9,10 @@ body{
 h3{
     font-family: 'Poppins', sans-serif;
 }
-
+i:active {
+    background-color: #064663;
+    transform: translateY(4px);
+}
 
 .social-box .box{
     background: #064663;
@@ -38,5 +41,39 @@ h3{
 
 .fa{
      color:#4183D7;
+}
+
+#delete{
+    background-color: #56baed;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#plusicon{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+#navbar{
+    height: 7%;
 }
 

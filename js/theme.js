@@ -6,10 +6,12 @@ $(document).ready(function(){
     if(result=="dark"){
         $("#externalCssLink").attr("href",'../css/'+filename+'_dark.css');
         $("#navbar").attr('class',"navbar navbar-expand-lg navbar-dark bg-dark");
+        $("#navbar2").attr('class',"navbar navbar-expand-sm navbar-dark bg-dark");
     }
     else if(result=="light"){
         $("#externalCssLink").attr("href",'../css/'+filename+'_light.css');
         $("#navbar").attr('class',"navbar navbar-expand-lg navbar-light bg-light");
+        $("#navbar2").attr('class',"navbar navbar-expand-sm navbar-light bg-light");
     }
     
     if($("#theme_button".length)){

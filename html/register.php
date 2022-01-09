@@ -20,14 +20,15 @@ if(isset($_POST['register']) && isset($_POST['email']) && isset($_POST['password
     $stmt=$conn->prepare("INSERT INTO users(email,password,salt) VALUES(?,?,?)");
     $stmt->bind_param("sss",$email,$password,$salt);
     if(!$stmt->execute())die("INSERT FAILED".$conn->error);
+    $row->close();
     header("location:index.php",true,301);
     exit;
   }
   else{
+    $row->close();
     $errorEnabled=true;
   }
 }
-$row->close();
 $conn->close();
 function generate_salt(){
   //creates random string characters for salt
