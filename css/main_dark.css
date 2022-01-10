@@ -38,6 +38,16 @@ i:active {
     color: #4183D7;
     font-size: 16px;
 }
+.box-text{
+    word-wrap: break-word;
+    overflow:hidden; 
+    font-size:x-small;
+    display: block;
+}
+.box{
+    display: block;
+    overflow:hidden;
+}
 
 .fa{
      color:#4183D7;
@@ -73,6 +83,7 @@ i:active {
 	cursor: pointer;
 	outline: inherit;
 }
+
 #navbar{
     height: 7%;
 }

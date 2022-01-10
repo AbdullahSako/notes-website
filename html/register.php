@@ -2,7 +2,7 @@
 require_once 'login.php';
 $conn = new mysqli($hn, $un, $pw, $db);  
 if ($conn->connect_error) echo($conn->connect_error); 
-$errorEnabled=false;
+$errorEnabled=false; //variable that shows email already exists error
 if(isset($_POST['register']) && isset($_POST['email']) && isset($_POST['password']))
 {
   $email=$_POST['email'];
@@ -26,7 +26,7 @@ if(isset($_POST['register']) && isset($_POST['email']) && isset($_POST['password
   }
   else{
     $row->close();
-    $errorEnabled=true;
+    $errorEnabled=true; //variable that shows email already exists error
   }
 }
 $conn->close();
@@ -39,9 +39,9 @@ function generate_salt(){
 <html>
 <head>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="../js/theme.js"></script> 
 <script type="text/javascript" src="../js/register_validation.js"></script> 
-<link rel="stylesheet" href="..\css\register_dark.css">
+<script type="text/javascript" src="../js/theme.js"></script> 
+<link rel="stylesheet" href="..\css\register_dark.css" id="externalCssLink">
 <!------ Include the above in your HEAD tag ---------->
 </head>
 
@@ -76,6 +76,8 @@ function generate_salt(){
     </div>
   </div>
 </div>
+
+<!-- library that creates a hint arrow -->
 <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
 <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 </body>
